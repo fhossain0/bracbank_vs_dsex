@@ -34,7 +34,11 @@ It calculates **daily returns**, provides **descriptive statistics**, and perfor
 - scikit-learn
 
 Install dependencies via:
+## Dependencies
 
+The required packages can be installed using **Conda** or **pip**:
+
+Conda:
 ```bash
-pip install pandas numpy scikit-learn
+conda install pandas numpy scikit-learn
 

@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 Index = pd.read_csv("index.csv").set_index('Date', drop=True)
 Index["Index_return"] = Index["DSEX"].pct_change(-1)
 Index.reset_index(inplace=True)                        # Resetting the index
-Index.rename(columns= {'Date': 'DATE'}, inplace=True)  # Renaming the column to math with other dataframes
+Index.rename(columns= {'Date': 'DATE'}, inplace=True)  # Renaming the column to match with other dataframes
 
 B_stock = pd.read_csv("BracBank.csv")
 B_stock= B_stock.set_index('DATE', drop=True)
